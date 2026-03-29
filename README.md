@@ -1,270 +1,93 @@
-# ☕ Java Full Course 2026 — Zero to Pro (Hindi)
+# 🚀 Java Full Course 2026: Zero to Pro (Hindi)
 
-> **A complete, logically arranged Java Developer roadmap** — from zero programming knowledge to industry-ready Java developer with AI integration.
+Welcome to the ultimate, industry-ready **Java Full Course (2026 Edition)**! 🎓
+This repository is the central hub for all the source code, project files, and detailed Hindi/Hinglish notes from the YouTube series. Whether you are a school student, an engineering undergrad, or someone pivoting into Tech—this course is designed to take you from **Zero to Pro Software Engineer**.
 
-📺 **YouTube Playlist:** [Java Full Course 2026 🔥 Zero to Pro](https://youtube.com)  
-🌐 **Channel:** ADV Indian Coder  
-📅 **Started:** November 2025 | **Status:** 🟢 Active & Ongoing
-
----
-
-## 🗺️ The Roadmap — 14 Phases
-
-This course is divided into **14 logically arranged phases**. Each phase builds on the previous one — no confusion, no random jumps.
-
-| Phase | Topic | Project |
-|-------|-------|---------|
-| 01 | Programming Fundamentals | — |
-| 02 | Java Fundamentals & Ecosystem | — |
-| 03 | Core Java Basics | 🔨 Simple Calculator App (CLI) |
-| 04 | Operators + Conditional Logic | 🔨 Student Result Analyzer |
-| 05 | Loops + Arrays | 🔨 Prime, Even/Odd, Factorial, Fibonacci |
-| 06 | Object-Oriented Programming (OOPs) | 🔨 Library Management System |
-| 07 | Advanced Core Java | 🔨 Multi-Threaded File Search Tool |
-| 08 | Database Integration (MySQL + JDBC) | 🔨 Employee Management System |
-| 09 | Java Web Development (Servlet + JSP + Hibernate) | 🔨 Online Book Store Backend |
-| 10 | Spring Framework | 🔨 User Management Backend |
-| 11 | Spring Boot + REST API | 🔨 Task Management REST API |
-| 12 | Cloud + DevOps (Docker + AWS + CI/CD) | 🔨 Cloud Deployed Task Manager |
-| 13 | Microservices Architecture | 🔨 E-Commerce Microservices System |
-| 14 | AI Integration (Spring AI) | 🔨 AI-Powered Java Application |
-
-> 💡 **From Phase 5 onwards:** Run DSA (Data Structures & Algorithms) **parallel** to this roadmap — both worlds together make you truly job-ready.
+> **🌟 The Goal:** Learn by doing. We don't just memorize syntax; we understand *Why* tools exist, apply *Real-World Analogies*, and build *Practical Projects* after every major concept!
 
 ---
 
-## 📂 Repository Structure
+## 📂 Course Structure & Phases
 
-```
-java-full-course-2026/
-│
-├── Phase-01-Programming-Fundamentals/
-│   └── notes/
-│
-├── Phase-02-Java-Fundamentals/
-│   └── notes/
-│
-├── Phase-03-Core-Java-Basics/
-│   ├── src/
-│   │   ├── Variables.java
-│   │   ├── DataTypes.java
-│   │   ├── Methods.java
-│   │   └── BasicIO.java
-│   └── project/
-│       └── SimpleCalculator.java
-│
-├── Phase-04-Operators-Conditionals/
-│   ├── src/
-│   │   ├── UnaryOperators.java
-│   │   ├── RelationalOperators.java
-│   │   ├── LogicalOperators.java
-│   │   ├── BitwiseOperators.java
-│   │   └── ConditionalStatements.java
-│   └── project/
-│       └── StudentResultAnalyzer.java
-│
-├── Phase-05-Loops-Arrays/
-│   ├── src/
-│   │   ├── ForLoop.java
-│   │   ├── WhileLoop.java
-│   │   ├── DoWhileLoop.java
-│   │   └── Arrays.java
-│   └── project/
-│       └── NumberProblems.java
-│
-├── Phase-06-OOPs/
-│   ├── src/
-│   │   ├── ClassesAndObjects.java
-│   │   ├── Encapsulation.java
-│   │   ├── Inheritance.java
-│   │   ├── Polymorphism.java
-│   │   └── Abstraction.java
-│   └── project/
-│       └── LibraryManagementSystem/
-│
-├── Phase-07-Advanced-Core-Java/
-│   ├── src/
-│   │   ├── ExceptionHandling.java
-│   │   ├── MultiThreading.java
-│   │   └── CollectionsFramework.java
-│   └── project/
-│       └── MultiThreadedFileSearchTool/
-│
-├── Phase-08-Database-Integration/
-│   ├── src/
-│   │   ├── MySQLSetup.java
-│   │   ├── JDBCConnection.java
-│   │   └── CRUDOperations.java
-│   └── project/
-│       └── EmployeeManagementSystem/
-│
-├── Phase-09-Java-Web-Development/
-│   ├── src/
-│   │   ├── ServletBasics.java
-│   │   ├── JSPBasics.jsp
-│   │   └── HibernateSetup.java
-│   └── project/
-│       └── OnlineBookStoreBackend/
-│
-├── Phase-10-Spring-Framework/
-│   ├── src/
-│   │   ├── SpringCore.java
-│   │   ├── DependencyInjection.java
-│   │   ├── SpringBeans.java
-│   │   └── SpringMVC.java
-│   └── project/
-│       └── UserManagementBackend/
-│
-├── Phase-11-SpringBoot-RestAPI/
-│   ├── src/
-│   │   ├── SpringBootIntro.java
-│   │   ├── RestAPISetup.java
-│   │   ├── SpringDataJPA.java
-│   │   └── ConfigurationManagement.java
-│   └── project/
-│       └── TaskManagementAPI/
-│
-├── Phase-12-Cloud-DevOps/
-│   ├── docker/
-│   │   └── Dockerfile
-│   ├── cicd/
-│   │   └── pipeline.yml
-│   └── project/
-│       └── CloudDeployedTaskManager/
-│
-├── Phase-13-Microservices/
-│   ├── src/
-│   │   ├── MicroservicesConcepts.java
-│   │   ├── APIGateway.java
-│   │   ├── ServiceCommunication.java
-│   │   └── ServiceDiscovery.java
-│   └── project/
-│       └── ECommerceMicroservicesSystem/
-│           ├── user-service/
-│           ├── product-service/
-│           ├── order-service/
-│           └── payment-service/
-│
-├── Phase-14-AI-Integration/
-│   ├── src/
-│   │   └── SpringAISetup.java
-│   └── project/
-│       └── AIIntegratedJavaApp/
-│
-└── README.md
-```
+Here is the complete organized breakdown of the course. Click on any Phase to access the detailed notes, source code, and interview questions.
+
+### 🧱 Phase 01: Programming Basics [👉 View Folder](./01-programming-basics)
+Building the absolute foundation. What goes on behind the scenes?
+- 🖥️ What is Programming & Why do we need it?
+- 🧠 Machine Level vs. High-Level Languages
+- ☕ Introduction to Java & Why it’s still relevant
+- ⚙️ JDK, JRE, JVM Explained (The internal architecture)
+
+### 🛠️ Phase 02: Environment Setup [👉 View Folder](./02-setup)
+Gearing up our computers for development.
+- ⬇️ Downloading and Installing Java
+- 💻 Setting up VS Code (Extensions & Shortcuts)
+- ✨ Writing our very first `Hello World` in Java
+
+### 💡 Phase 03: Core Concepts [👉 View Folder](./03-core-concepts)
+Understanding how Java processes our code.
+- 📦 Classes and Objects (Real-world mapping)
+- 🏗️ The `main` Method & Execution Flow
+- 🔠 Static vs. Dynamic Typing
+- 📝 Naming Conventions (CamelCase, PascalCase, etc.)
+
+### 📥 Phase 04: Variables & Data Types [👉 View Folder](./04-variables-datatypes)
+Data management in a computer's memory.
+- 🪣 What are Variables? (The Bucket Analogy)
+- 🔢 Primitive Data Types (`int`, `char`, `boolean`, `double`, etc.)
+- 🔡 Non-Primitive Data Types (`String`, Arrays)
+- 💾 Memory Allocation secrets
+
+### ⚙️ Phase 05: Methods [👉 View Folder](./05-methods)
+Learning the DRY (Don't Repeat Yourself) Principle for organized code.
+- 🏭 What are Methods? (The Factory Analogy)
+- 🔄 Method Parameters and Return Types
+- 🎛️ Static vs Non-Static Methods
+
+### 🎭 Phase 06: Type Casting [👉 View Folder](./06-type-casting)
+Converting data formats smoothly.
+- 🌊 Implicit Type Casting (Widening / Auto-conversion)
+- 🔨 Explicit Type Casting (Narrowing / Manual-conversion)
+- ⚠️ Data Loss Warnings
+
+### ➕ Phase 07: Operators [👉 View Folder](./07-operators)
+Performing operations and math on data.
+- 🧮 Arithmetic Operators (`+`, `-`, `*`, `/`, `%`)
+- ⚖️ Relational Operators (`==`, `>=`, `<=`, `!=`)
+- 🧠 Logical Operators (`&&`, `||`, `!`)
+- 🔄 Assignment & Unary Operators (`++`, `--`)
+
+### 🔀 Phase 08: Conditionals (Decision Making) [👉 View Folder](./08-conditionals)
+Teaching our programs how to make choices.
+- 🚦 `if`, `else`, and `else if` Ladders
+- 🪆 Nested `if` Statements
+- ✂️ Ternary Operator (`? :`)
+- 🏢 The `switch` Statement (and handling Fall-throughs)
+
+### 🔁 Phase 09: Loops (Ongoing) [👉 View Folder](./09-loops)
+Automating repetitive tasks smartly.
+- 🌀 The `while` Loop (Pre-condition checking)
+- 📱 The `do-while` Loop (Exit-controlled, Guaranteed 1 execution)
+- 🏎️ The `for` Loop *(Coming Soon)*
+- 🪆 Nested Loops & Time Complexity Basics
 
 ---
 
-## 📹 Videos Published So Far
+## 🏆 All Practical Projects [👉 View Project Hub](./All-Projects)
+We believe in Project-Based Learning. All phases culminate in building logic-heavy console applications. Check out our completed projects:
 
-| EP | Video Title | Date | Link |
-|----|------------|------|------|
-| 01 | What is Programming? Real Life Logic | Nov 28, 2025 | ▶️ |
-| 02 | Low-Level vs High-Level \| Compiler vs Interpreter | Dec 1, 2025 | ▶️ |
-| 03 | Why Java in 2026? Java vs Python vs C++ | Dec 3, 2025 | ▶️ |
-| 04 | How Java Actually Works: JDK, JRE, JVM | Dec 6, 2025 | ▶️ |
-| 05 | Java Features Explained \| How Java Became Platform Independent | Dec 10, 2025 | ▶️ |
-| 06 | Java Install & Setup 2026 \| JDK Setup | Dec 15, 2025 | ▶️ |
-| 07 | Bringing Reality into Code \| From Real-World Thinking | Dec 17, 2025 | ▶️ |
-| 08 | Java Methods Explained 🔥 main() Method | Dec 19, 2025 | ▶️ |
-| 09 | Static vs Dynamic Typed Programming Explained | Dec 20, 2025 | ▶️ |
-| 10 | Variables in Java 🔥 Local vs Instance | Dec 23, 2025 | ▶️ |
-| 11 | Java Data Types \| Primitive vs Non-Primitive | Dec 27, 2025 | ▶️ |
-| 12 | 🔨 Java Mini Project #1 — Student Management (CLI) | Dec 31, 2025 | ▶️ |
-| 13 | Java Type Casting \| Implicit & Explicit | Jan 5, 2026 | ▶️ |
-| 14 | Why Operators Exist in Programming? | Jan 13, 2026 | ▶️ |
-| 15 | Arithmetic Operators in Java with Examples | Jan 15, 2026 | ▶️ |
-| 16 | Java Unary Operators \| ++ -- i++ vs ++i | Jan 18, 2026 | ▶️ |
-| 17 | Relational Operators in Java — Complete Guide | Jan 22, 2026 | ▶️ |
-| 18 | Logical Operators in Java \| AND OR NOT | Jan 28, 2026 | ▶️ |
-| 19 | Assignment Operators in Java 🔥 Smart Way | Feb 14, 2026 | ▶️ |
-| 20 | Bitwise Operators in Java \| Binary AND… | Feb 21, 2026 | ▶️ |
-| 21 | 🔨 Java Mini Project #2 — Student Result Analyzer | Feb 26, 2026 | ▶️ |
-| 22 | Java Conditional Statements \| If… | Mar 7, 2026 | ▶️ |
-| 23 | If Statement in Java for Beginners | Mar 11, 2026 | ▶️ |
-| 24 | If Else Statement in Java (Hindi) | Mar 17, 2026 | ▶️ |
-| 25 | If Else If Statement in Java (Hindi) | Mar 20, 2026 | ▶️ |
-| 26 | Nested If in Java 🔥 Real Project | Mar 21, 2026 | ▶️ |
-
-> More episodes uploading every week — **Star ⭐ this repo** to stay updated!
+- 🎒 **01 - Student Management System:** Built after *Phase 05 (Methods)* to demonstrate Data Types and Reusability.
+- 📊 **02 - Student Result Analyzer:** Built after *Phase 07 (Operators)* to demonstrate Inter-Method communication. Later enhanced in *Phase 08 (Conditionals)* to calculate Pass/Fail and Topper Status.
+- 🏢 **03 - Floor Selection System:** Built during *Phase 08* demonstrating precise `switch` statement control flow simulating a building elevator.
+- *(More projects to be added as we progress!)*
 
 ---
 
-## 🚀 How to Use This Repository
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/java-full-course-2026.git
-   cd java-full-course-2026
-   ```
-
-2. **Follow the phases in order** — don't skip, each phase depends on the previous one.
-
-3. **Watch the video first**, then open the corresponding code in this repo.
-
-4. **Build the projects** yourself before looking at the solution code.
-
-5. **Push your own practice code** to your GitHub daily — consistency is everything.
+## 💡 How to use this Repository?
+1. **To Read Notes:** Open any folder and read the `.md` files. They contain detailed Hinglish notes, real-world analogies, and Interview Questions covered in the videos.
+2. **To Run Code:** Clone the repository, open it in VS Code, and run the `.java` files using the Java Extension Pack.
+3. **To Debug:** Use the built-in VS Code debugger to step through execution flows (especially useful for the Nested Loops phase!).
 
 ---
 
-## 🛠️ Prerequisites
-
-- Java JDK 21+ installed → [Download](https://www.oracle.com/java/technologies/downloads/)
-- Any IDE: IntelliJ IDEA (recommended) / VS Code / Eclipse
-- Git installed → [Download](https://git-scm.com/)
-- MySQL (needed from Phase 8 onwards)
-
----
-
-## 🎯 Who Is This Course For?
-
-- ✅ Complete beginners — zero programming background
-- ✅ Non-tech background students
-- ✅ Students who tried Java before but got confused
-- ✅ Anyone who wants to become an **industry-ready Java developer**
-
----
-
-## 📌 Key Highlights
-
-- 🧠 **Logically Arranged** — every phase is ordered so the next one makes sense
-- 🔨 **Project in every phase** — no theory without practice
-- 🤝 **DSA runs parallel** from Phase 5 — interview-ready from the start
-- ☁️ **Cloud + DevOps** included — not just Java, but full deployment
-- 🤖 **AI Integration** in the final phase — future-proof skills
-- 🇮🇳 **Taught in Hindi** — simple language, deep concepts
-
----
-
-## 🔗 Connect & Follow
-
-| Platform | Link |
-|----------|------|
-| 📺 YouTube | [ADV Indian Coder](https://youtube.com) |
-| 💼 LinkedIn | [Your LinkedIn](https://linkedin.com) |
-| 🐙 GitHub | [Your GitHub](https://github.com) |
-| 📸 Instagram | [Your Instagram](https://instagram.com) |
-
----
-
-## ⭐ Support This Course
-
-If this roadmap and course is helping you:
-- ⭐ **Star this repository**
-- 👍 **Like the videos** on YouTube
-- 🔔 **Subscribe** to the channel
-- 📢 **Share** with friends who want to learn Java
-
-> *"Consistency + Right Roadmap = Industry-Ready Developer"* — ADV Indian Coder
-
----
-
-## 📄 License
-
-This repository is for educational purposes. Feel free to use the code for learning. Please credit the channel if you share or reuse.
-
----
-
-<p align="center">Made with ❤️ by <strong>ADV Indian Coder</strong> | Java Full Course 2026 🔥</p>
+**Made with ❤️ for the Developer Community | #ZeroToPro**
