@@ -3,7 +3,6 @@
 Welcome to the ultimate, industry-ready **Java Full Course (2026 Edition)**! 🎓
 This repository is the central hub for all the source code, project files, and detailed Hindi/Hinglish notes from our comprehensive YouTube series. Whether you are a school student, an engineering undergrad, or someone pivoting into Tech—this course is designed to take you from **Zero to Pro Software Engineer**.
 
-**🔍 Keywords & Topics Covered:** `Java Programming Hindi`, `Learn Java from Scratch`, `Java Full Course 2026`, `Java Interview Questions`, `Java Backend Development`, `Object-Oriented Programming (OOPs)`, `Java Projects with Source Code`, `Java Loops and Conditionals`, `Software Engineering Basics`.
 
 > **🌟 The Goal:** Learn by doing. We don't just memorize syntax; we understand *Why* tools exist, apply *Real-World Analogies*, and build *Practical Projects* after every major concept!
 
