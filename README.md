@@ -80,6 +80,7 @@ We believe in Project-Based Learning. All phases culminate in building logic-hea
 - 🎒 **01 - Student Management System:** Built after *Phase 05 (Methods)* to demonstrate Data Types and Reusability.
 - 📊 **02 - Student Result Analyzer:** Built after *Phase 07 (Operators)* to demonstrate Inter-Method communication. Later enhanced in *Phase 08 (Conditionals)* to calculate Pass/Fail and Topper Status.
 - 🏢 **03 - Floor Selection System:** Built during *Phase 08* demonstrating precise `switch` statement control flow simulating a building elevator.
+- 🏧 **04 - ATM System:** Built combining *Phase 08 (Conditionals)* and *Phase 09 (Loops)* simulating a real-life ATM flow with PIN verification (`do-while`), Menu Navigation, Shared Data (`static` variables), and secure sessions.
 - *(More projects to be added as we progress!)*
 
 ---
