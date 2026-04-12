@@ -65,12 +65,27 @@ Teaching our programs how to make choices.
 - ✂️ Ternary Operator (`? :`)
 - 🏢 The `switch` Statement (and handling Fall-throughs)
 
-### 🔁 Phase 09: Loops (Ongoing) [👉 View Folder](./09-loops)
+### 🔁 Phase 09: Loops [👉 View Folder](./09-loops)
 Automating repetitive tasks smartly.
 - 🌀 The `while` Loop (Pre-condition checking)
 - 📱 The `do-while` Loop (Exit-controlled, Guaranteed 1 execution)
-- 🏎️ The `for` Loop *(Coming Soon)*
+- 🏎️ The `for` Loop
 - 🪆 Nested Loops & Time Complexity Basics
+
+### 🌟 Phase 10: Patterns [👉 View Folder](./10-patterns)
+Building logical thinking through visual patterns.
+- ⭐ Solid & Hollow Rectangles
+- 🔺 Half Pyramids & Inverted Pyramids
+- 🔢 Number Pyramids & Diamond Patterns
+
+### 🧩 Phase 11: Object-Oriented Programming (OOPs) [👉 View Folder](./11-oops)
+The most important paradigm shift — from Procedural to Object-Oriented!
+- 🤔 Need of OOPs — Why POP failed & How OOP solved it
+- 🏗️ Class & Object (Blueprint vs. Real Entity)
+- 🔒 Encapsulation — Data hiding with `private`
+- 🧬 Inheritance — Code reusability via `extends`
+- 🎭 Polymorphism — One interface, many behaviors
+- 🎨 Abstraction — Hiding complexity, showing essentials
 
 ---
 
