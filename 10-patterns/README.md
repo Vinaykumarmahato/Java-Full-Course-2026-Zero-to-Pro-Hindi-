@@ -21,4 +21,4 @@ Printing patterns is not just about making structural art in the console. It dee
 - **Problem-Solving Frameworks:** Preparing your brain for iterating over matrices, 2D Arrays, and Dynamic Programming in the future.
 
 ### 📝 Next Steps
-Whenever you watch the first Patterns episode, feel free to drop the code or transcript here, and we'll start building out your pattern library!
+Start by reading the [Introduction to Pattern Programming](./01-intro-to-patterns.md) to understand the prerequisites, right approach, and why mastering patterns is essential before moving to Data Structures and Algorithms!
