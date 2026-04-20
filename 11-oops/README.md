@@ -20,6 +20,9 @@ Welcome to the **OOPs** phase — arguably the most important turning point in y
 | 1 | [need-of-oops.md](./need-of-oops.md) | Why OOP? POP vs OOP, the 5 problems & solutions |
 | 2 | [PopExample.java](./PopExample.java) | C-style procedural code showing POP problems (in Java syntax) |
 | 3 | [OopSolution.java](./OopSolution.java) | Same problem solved with OOP — data security & validation |
+| 4 | [object-memory-overloading.md](./object-memory-overloading.md) | Object Creation, Memory (Heap/Stack), and Method Overloading |
+| 5 | [ObjectAndMemory.java](./ObjectAndMemory.java) | Code example for Object creation and memory behavior |
+| 6 | [MethodOverloading.java](./MethodOverloading.java) | Calculator example showing same-name method flexibility |
 
 ## 💡 Key Takeaway
 > **OOPs का जन्म Data और Function को एक साथ में जोड़ने के लिए हुआ था।**
