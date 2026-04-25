@@ -79,13 +79,11 @@ Building logical thinking through visual patterns.
 - 🔢 Number Pyramids & Diamond Patterns
 
 ### 🧩 Phase 11: OOP Foundation [👉 View Folder](./11-oop-foundation)
-The most important paradigm shift — from Procedural to Object-Oriented!
+The most important paradigm shift with **Chapter-wise timestamp-mapped code files!**
 - 🤔 Need of OOPs — Why POP failed & How OOP solved it
-- 🏗️ Class & Object (Blueprint vs. Real Entity)
-- 🔒 Encapsulation — Data hiding with `private`
-- 🧬 Inheritance — Code reusability via `extends`
-- 🎭 Polymorphism — One interface, many behaviors
-- 🎨 Abstraction — Hiding complexity, showing essentials
+- 🏗️ Object Creation & JRE Memory Architecture (Heap, Stack, Method Area)
+- 💾 Instance Variables vs Local Variables (Defaults, Scope, and Garbage Collection)
+- 🎭 Method Overloading (Compile-Time Polymorphism vs C language)
 
 ### 🚗 Phase 12: Constructors & `this` Keyword [👉 View Folder](./12-constructors)
 Guaranteeing proper Object initialization with **Chapter-wise timestamp-mapped code files!**
