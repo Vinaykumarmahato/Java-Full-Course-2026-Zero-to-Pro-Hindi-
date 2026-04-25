@@ -78,7 +78,7 @@ Building logical thinking through visual patterns.
 - 🔺 Half Pyramids & Inverted Pyramids
 - 🔢 Number Pyramids & Diamond Patterns
 
-### 🧩 Phase 11: Object-Oriented Programming (OOPs) [👉 View Folder](./11-oops)
+### 🧩 Phase 11: OOP Foundation [👉 View Folder](./11-oop-foundation)
 The most important paradigm shift — from Procedural to Object-Oriented!
 - 🤔 Need of OOPs — Why POP failed & How OOP solved it
 - 🏗️ Class & Object (Blueprint vs. Real Entity)
@@ -86,6 +86,14 @@ The most important paradigm shift — from Procedural to Object-Oriented!
 - 🧬 Inheritance — Code reusability via `extends`
 - 🎭 Polymorphism — One interface, many behaviors
 - 🎨 Abstraction — Hiding complexity, showing essentials
+
+### 🚗 Phase 12: Constructors & `this` Keyword [👉 View Folder](./12-constructors)
+Guaranteeing proper Object initialization.
+- 🛠️ What is a Constructor?
+- 🌟 Default vs Parameterized Constructors
+- 🔑 The `this` Keyword
+- 🎭 Constructor Overloading
+- ⛓️ Constructor Chaining
 
 ---
 
