@@ -88,12 +88,12 @@ The most important paradigm shift — from Procedural to Object-Oriented!
 - 🎨 Abstraction — Hiding complexity, showing essentials
 
 ### 🚗 Phase 12: Constructors & `this` Keyword [👉 View Folder](./12-constructors)
-Guaranteeing proper Object initialization.
-- 🛠️ What is a Constructor?
-- 🌟 Default vs Parameterized Constructors
-- 🔑 The `this` Keyword
-- 🎭 Constructor Overloading
-- ⛓️ Constructor Chaining
+Guaranteeing proper Object initialization with **Chapter-wise timestamp-mapped code files!**
+- 🛠️ What is a Constructor? (The Problem vs Solution)
+- 📚 All 7 Types of Constructors (Default, No-Arg, Parameterized, Overloading, Chaining, Copy, Private)
+- 🔑 The `this` Keyword (Solving local vs instance ambiguity)
+- 🏫 Constructor Chaining (The 3-Rooms Concept)
+- 🎯 Top Interview Questions & "Trap" Answers
 
 ---
 
