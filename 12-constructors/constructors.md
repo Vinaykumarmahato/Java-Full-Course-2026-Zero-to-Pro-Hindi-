@@ -5,6 +5,8 @@
 ---
 
 ## 1. 🤔 The Problem (कंस्ट्रक्टर की जरुरत क्यों पड़ी?)
+> **📹 Video Timeline: 00:01:00** | **👨‍💻 Code Ref:** `CH01_TheProblemWithoutConstructor.java`
+
 मान लीजिए आप एक `Student` का डाटा स्टोर कर रहे हैं, जिसमें आपको उसका `name`, `rollNumber` और `city` देना है। पुराने तरीके (without constructor) से ऑब्जेक्ट बनाते समय:
 ```java
 Student s1 = new Student();
@@ -40,6 +42,8 @@ s1.name = "Rahul";
 कंस्ट्रक्टर को मुख्य तौर पर 7 अलग-अलग टाइप्स / कांसेप्ट्स में बाँटा गया है। चलिए इन्हें "एक किताब" की तरह डीप में समझते हैं:
 
 ### Type 1: Default Constructor (बिना दिखावा वाला)
+> **📹 Video Timeline: 00:25:34** | **👨‍💻 Code Ref:** `CH02_DefaultAndNoArgConstructor.java`
+
 अगर कोड में आपने कोई कंस्ट्रक्टर नहीं बनाया है, तो **JVM (Java Virtual Machine)** बैकग्राउंड में अपने आप एक Empty कंस्ट्रक्टर बना देता है।
 - **विज़िबिलिटी:** यह हमें आँखों से दिखाई नहीं देता।
 - **काम:** यह मेमोरी में हिप एरिया (Heap Area) में इंस्टेंस वेरिएबल्स के लिए बाय-डिफ़ॉल्ट वैल्युज़ (जैसे int के लिए `0`, String के लिए `null`) सेट करता है।
@@ -59,6 +63,8 @@ class Student {
 ---
 
 ### Type 3: Parameterized Constructor
+> **📹 Video Timeline: 00:31:36** | **👨‍💻 Code Ref:** `CH03_Parameterized_ThisKeyword.java`
+
 यह सबसे पावरफुल और इस्तेमाल होने वाला टाइप है। यहीं से हम अपनी "एडमिशन फॉर्म" वाली प्रॉब्लम सॉल्व करते हैं। हम पैरामीटर्स में बाउंडेशन लगा देते हैं कि ऑब्जेक्ट बनते ही यह डाटा मिलना ही चाहिए!
 
 ```java
@@ -84,6 +90,8 @@ Student s1 = new Student(101, "Vinay"); // एक लाइन में का�
 ---
 
 ### Type 4: Constructor Overloading
+> **📹 Video Timeline: 00:41:35** | **👨‍💻 Code Ref:** `CH04_ConstructorOverloading.java`
+
 मेथड की तरह ही, हम एक क्लास के अंदर **एक से अधिक (Multiple) कंस्ट्रक्टर्स** बना सकते हैं। शर्त सिर्फ इतनी है कि उनके पैरामीटर्स (Arguments) अलग-अलग (Different Types या Different Counts) होने चाहिए।
 - यह डिसिशन (Decision) **Compile Time** पर लिया जाता है कि कौन सा कंस्ट्रक्टर कॉल होगा।
 
@@ -100,6 +108,8 @@ class Student {
 ---
 
 ### Type 5: Constructor Chaining (`this()` Method)
+> **📹 Video Timeline: 00:46:37** | **👨‍💻 Code Ref:** `CH05_ConstructorChaining.java`
+
 जब हम Constructor Overloading करते हैं, तो अक्सर हमारा कोड मेसी (Messy) हो जाता है और 100% DRY (Don't Repeat Yourself) रूल टूट जाता है।
 समान असाइनमेंट कोड हम हर कंस्ट्रक्टर में लिखते हैं। इसे रोकने के लिए हम `this()` का इस्तेमाल करते हैं, जो एक कंस्ट्रक्टर से दूसरे कंस्ट्रक्टर को कॉल कर सकता है।
 
@@ -113,6 +123,8 @@ class Student {
 ---
 
 ### Type 6: Copy Constructor
+> **👨‍💻 Code Ref:** `CH06_CopyAndPrivateConstructor.java`
+
 जावा में C++ की तरह कोई बाय-डिफ़ॉल्ट 'Copy Constructor' नहीं होता है, लेकिन हम इसे खुद बना सकते हैं।
 अगर हमें किसी **मौजूदा (Existing) ऑब्जेक्ट की एकदम हूबहू कॉपी (Clone)** बनानी हो, तो एक ऐसा कंस्ट्रक्टर बनाते हैं जो पैरामीटर में पुराने ऑब्जेक्ट को ही पास कर ले!
 
