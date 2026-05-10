@@ -93,6 +93,15 @@ Guaranteeing proper Object initialization with **Chapter-wise timestamp-mapped c
 - 🏫 Constructor Chaining (The 3-Rooms Concept)
 - 🎯 Top Interview Questions & "Trap" Answers
 
+### 🧠 Phase 13: Static Keyword & JVM Memory Deep Dive [👉 View Folder](./13-static-keyword)
+Understanding class-level data with **Chapter-wise timestamp-mapped code files!**
+- ⚙️ Behind the Scenes: Class Loading (Loading, Linking, Initialization)
+- ⚡ Static Variables vs Instance Variables (Heap Memory allocation)
+- 🏗️ Static Initialization Blocks (The "Why" and "When" of usage)
+- ⏳ Order of Execution: The Hierarchy (Static -> Non-Static -> Constructor)
+- 🗝️ Why `main` is static? (JVM's Perspective)
+- 🛡️ Object Independence & Class-Level access
+
 ---
 
 ## 🏆 All Practical Projects [👉 View Project Hub](./All-Projects)
