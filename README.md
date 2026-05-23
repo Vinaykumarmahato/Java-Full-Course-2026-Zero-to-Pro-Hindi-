@@ -102,6 +102,14 @@ Understanding class-level data with **Chapter-wise timestamp-mapped code files!*
 - 🗝️ Why `main` is static? (JVM's Perspective)
 - 🛡️ Object Independence & Class-Level access
 
+### 🔢 Phase 14: Introduction to Arrays & Memory Architecture [👉 View Folder](./14-arrays)
+Understanding arrays, stack-heap memory layout, and declaration/initialization syntaxes.
+- 📦 What is an Array and why do we need it? (The phone contacts analogy)
+- 💾 Stack vs. Heap memory allocation for Arrays
+- 🏷️ Memory address mapping, References and 0-based indexing
+- 🛠️ 5 different syntaxes to declare and initialize arrays in Java
+- ⏳ Traversal and access of Array items
+
 ---
 
 ## 🏆 All Practical Projects [👉 View Project Hub](./All-Projects)
