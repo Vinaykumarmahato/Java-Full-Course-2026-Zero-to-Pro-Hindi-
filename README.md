@@ -108,6 +108,11 @@ Understanding arrays, stack-heap memory layout, and declaration/initialization s
 - 💾 Stack vs. Heap memory allocation for Arrays
 - 🏷️ Memory address mapping, References and 0-based indexing
 - 🛠️ 5 different syntaxes to declare and initialize arrays in Java
+- 🔍 Declaration vs Initialization — गहराई में (Memory level understanding)
+- 📝 3 Declaration Styles (`int[] arr` vs `int arr[]` vs multiple variables)
+- 🎯 Interview Trap: `int[] a, b` vs `int a[], b` — कौन Array है कौन नहीं?
+- ⚡ `new` Keyword — Heap में Object कैसे बनता है
+- 🧩 Direct Value Assignment with Curly Braces `{}`
 - ⏳ Traversal and access of Array items
 
 ---
