@@ -310,20 +310,180 @@ String[] names = {"Vinu", "Ram", "Rahul"};
 
 ---
 
-## 📂 इस अध्याय की Code Files
+---
 
-| File | Description |
-| :--- | :--- |
-| [`ArrayMemoryDemo.java`](./ArrayMemoryDemo.java) | Stack vs Heap memory behavior with normal variables vs Arrays |
-| [`ArraySyntaxDemo.java`](./ArraySyntaxDemo.java) | All 5 methods/syntaxes of Array declaration and initialization |
-| [`ArrayDeclarationStylesDemo.java`](./ArrayDeclarationStylesDemo.java) | 3 declaration styles, interview trap, `new` keyword, direct values |
+## 13. 1D Array Traversal & Enhanced For Loop (For-Each Loop) [Ep 44]
+
+एरे के हर एलिमेंट तक पहुँचने (Access) को **Traversal** कहते हैं। जावा में ट्रैवर्सल के दो मुख्य तरीके हैं:
+
+### A. Traditional For Loop (Index-based)
+```java
+int[] scores = {95, 88, 72, 99, 64};
+for (int i = 0; i < scores.length; i++) {
+    System.out.println("Element at index " + i + " = " + scores[i]);
+}
+```
+* **फायदे:** आपको index `i` का एक्सेस मिलता है, आप आगे/पीछे (Reverse) चल सकते हैं या elements को modify कर सकते हैं।
+
+### B. Enhanced For Loop / For-Each Loop (Value-based)
+Java 5 में आया **For-Each Loop** बिना index की चिंता किए सीधे values पर iterate करता है:
+```java
+for (int score : scores) {
+    System.out.println("Score: " + score);
+}
+```
+
+> [!WARNING]
+> **For-Each की सीमाएं (Limitations):**
+> 1. **No Direct Modification:** `score = score * 2;` करने से केवल local variable बदलता है, Heap में मौजूद असली Array नहीं बदलता!
+> 2. **No Reverse Traversal:** यह हमेशा 0 से `length-1` तक सीधे क्रम में चलता है।
+> 3. **No Index Access:** आपको वर्तमान एलिमेंट का index नंबर पता नहीं चलता।
 
 ---
 
-## 💡 आने वाले वीडियो में हम क्या पढ़ेंगे?
-* एरे के एलिमेंट्स को लूप (For Loop, For-Each Loop) के ज़रिए कैसे एक्सेस करते हैं?
-* एरे को ट्रैवर्स (Traverse) करने के तरीके।
-* एरे का साइज़ रन-टाइम पर कैसे पता करते हैं (`length` प्रॉपर्टी)।
+## 14. 2D Arrays (Two-Dimensional Arrays / Matrices) [Ep 45]
+
+जब डेटा टेबल (Rows और Columns) के रूप में हो (जैसे Tic-Tac-Toe बोर्ड, एक्सेल शीट या इमेज पिक्सल्स), तब हम **2D Array** का इस्तेमाल करते हैं।
+
+### 2D Array का निर्माण:
+```java
+// 3 Rows, 4 Columns (कुल 12 कमरे Heap में)
+int[][] matrix = new int[3][4];
+```
+
+### Direct Literal Initialization:
+```java
+int[][] marks = {
+    {85, 90, 78}, // Row 0
+    {76, 88, 95}, // Row 1
+    {92, 79, 89}  // Row 2
+};
+```
+
+### 2D Array Traversal (Nested Loops):
+```java
+for (int i = 0; i < marks.length; i++) {           // Rows
+    for (int j = 0; j < marks[i].length; j++) {    // Columns
+        System.out.print(marks[i][j] + " ");
+    }
+    System.out.println();
+}
+```
+
+> [!IMPORTANT]
+> * `marks.length` = कुल Rows की संख्या (3)
+> * `marks[0].length` = Row 0 में Columns की संख्या (3)
 
 ---
-**अगर आपको यह कॉन्सेप्ट बिल्कुल आसान लगा, तो कमेंट बॉक्स में अपना फीडबैक जरूर शेयर करें और चैनल को सब्सक्राइब करना न भूलें! #ZeroToPro**
+
+## 15. Jagged Arrays (विषम / Ragged Arrays) [Ep 46]
+
+**Jagged Array** वह 2D Array होता है जिसमें हर Row की लंबाई (Columns) अलग-अलग हो सकती है!
+
+### Real-life Analogy:
+मान लीजिए एक कॉलेज में 3 ब्रांचेस हैं:
+* Branch 0 (AI/ML): 2 छात्र
+* Branch 1 (CSE): 4 छात्र
+* Branch 2 (ECE): 3 छात्र
+
+अगर हम नॉर्मल 2D Array `new int[3][4]` बनाते तो Branch 0 और 2 में मेमोरी की बर्बादी होती। **Jagged Array** मेमोरी बचाता है:
+
+```java
+// Step 1: सिर्फ Rows डिफाइन करें
+int[][] branches = new int[3][];
+
+// Step 2: हर Row के लिए अलग-अलग साइज एलोकेट करें
+branches[0] = new int[2]; // AI/ML
+branches[1] = new int[4]; // CSE
+branches[2] = new int[3]; // ECE
+```
+
+---
+
+## 16. Multidimensional & 3D Arrays (मेमोरी का गहरा नक्शा) [Ep 47]
+
+3D Array असल में **"2D Arrays का एक Array"** होता है (जैसे एक किताब जिसमें कई पन्ने/टेबल्स हों)।
+
+```java
+// [Blocks/Colleges][Classes/Rows][Students/Cols]
+int[][][] university = new int[2][3][2];
+```
+
+### 🧠 3D Memory Pointer Hierarchy:
+```text
+Stack: university ---> [Heap Reference Block Array (Size 2)]
+                         |---> Block[0] ---> [Row Pointer Array (Size 3)]
+                         |                     |---> Row[0] ---> [Data: 50, 51]
+                         |                     |---> Row[1] ---> [Data: 52, 53]
+                         |                     |---> Row[2] ---> [Data: 54, 55]
+                         |
+                         |---> Block[1] ---> [Row Pointer Array (Size 3)]
+                                               |---> Row[0] ---> [Data: 56, 57]...
+```
+
+---
+
+## 17. Array of Objects (OOP + Arrays) [Ep 48]
+
+अब तक हमने `int[]` या `String[]` देखा। जब हमें अपने कस्टम क्लास (जैसे `Student`, `Employee`, `Car`) के कई ऑब्जेक्ट्स को एक साथ स्टोर करना हो:
+
+```java
+class Student {
+    int rollNo;
+    String name;
+    Student(int r, String n) { this.rollNo = r; this.name = n; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Step 1: References का एरे बनाना (यह ऑब्जेक्ट्स नहीं बनाता! सभी null होते हैं)
+        Student[] batch = new Student[3];
+        
+        // Step 2: हर index पर new Object असाइन करना
+        batch[0] = new Student(101, "Aman");
+        batch[1] = new Student(102, "Priya");
+        batch[2] = new Student(103, "Rohan");
+        
+        for (Student s : batch) {
+            System.out.println(s.rollNo + " : " + s.name);
+        }
+    }
+}
+```
+
+> [!CAUTION]
+> अगर आप `Student[] batch = new Student[3];` लिखकर सीधे `batch[0].name` एक्सेस करेंगे, तो **`NullPointerException`** आएगी, क्योंकि सिर्फ References का डिब्बा बना है, अंदर असली Object नहीं!
+
+---
+
+## 18. Drawbacks & Limitations of Arrays (एरे की कमियां) [Ep 49]
+
+जावा में Array शक्तिशाली है, लेकिन इसकी 4 बड़ी सीमाएं हैं:
+
+1. 🔒 **Fixed Size (स्थिर आकार):** एक बार Array बन गया तो उसका size न घटाया जा सकता है न बढ़ाया जा सकता है।
+2. 🔠 **Homogeneous Only (समान डेटा टाइप):** एक `int[]` में केवल numbers ही आ सकते हैं, `String` या `boolean` नहीं।
+3. 🧱 **Contiguous Memory Requirement:** हीप में एक साथ लंबा खाली ब्लॉक चाहिए। मेमोरी टुकड़ों में फ्री होने पर भी `OutOfMemoryError` आ सकता है।
+4. ⚙️ **Lack of Ready-Made Methods:** direct insert, delete, search या automatic resizing के इनबिल्ट मेथड्स नहीं होते।
+
+💡 **समाधान:** इन्हीं कमियों को दूर करने के लिए जावा में **Collections Framework (ArrayList, LinkedList)** का जन्म हुआ!
+
+---
+
+## 📂 इस अध्याय की Code Files (Complete Episode Mappings)
+
+| File | Episode / Video | Description |
+| :--- | :--- | :--- |
+| [`ArrayMemoryDemo.java`](./ArrayMemoryDemo.java) | Ep 42 | Stack vs Heap memory behavior with variables vs Arrays |
+| [`ArraySyntaxDemo.java`](./ArraySyntaxDemo.java) | Ep 43 | All 5 syntaxes of Array declaration and initialization |
+| [`ArrayDeclarationStylesDemo.java`](./ArrayDeclarationStylesDemo.java) | Ep 43 | 3 declaration styles, interview traps, `new` keyword |
+| [`OneDArrayEnhancedForDemo.java`](./OneDArrayEnhancedForDemo.java) | Ep 44 | 1D Array Traversal, Traditional vs Enhanced For-each loop |
+| [`TwoDArrayDemo.java`](./TwoDArrayDemo.java) | Ep 45 | 2D Arrays, Matrix representation & nested loops |
+| [`JaggedArrayDemo.java`](./JaggedArrayDemo.java) | Ep 46 | Jagged/Ragged Arrays with uneven row lengths |
+| [`ThreeDArrayMemoryDemo.java`](./ThreeDArrayMemoryDemo.java) | Ep 47 | 3D Multidimensional Arrays & Heap-Stack Pointer Map |
+| [`ArrayOfObjectsDemo.java`](./ArrayOfObjectsDemo.java) | Ep 48 | Array of Class Objects & NullPointerException Trap |
+| [`ArrayDrawbacksDemo.java`](./ArrayDrawbacksDemo.java) | Ep 49 | 4 Big Drawbacks of Arrays & Need of Collections |
+
+---
+
+**Made with ❤️ for the Developer Community | #ZeroToPro**
+

@@ -102,18 +102,30 @@ Understanding class-level data with **Chapter-wise timestamp-mapped code files!*
 - 🗝️ Why `main` is static? (JVM's Perspective)
 - 🛡️ Object Independence & Class-Level access
 
-### 🔢 Phase 14: Introduction to Arrays & Memory Architecture [👉 View Folder](./14-arrays)
-Understanding arrays, stack-heap memory layout, and declaration/initialization syntaxes.
+### 🔢 Phase 14: Complete Arrays Masterclass (1D, 2D, Jagged, 3D & Objects) [👉 View Folder](./14-arrays)
+From internal memory layout to Multidimensional Arrays and Objects with **Chapter-wise timestamp-mapped code files!**
 - 📦 What is an Array and why do we need it? (The phone contacts analogy)
 - 💾 Stack vs. Heap memory allocation for Arrays
 - 🏷️ Memory address mapping, References and 0-based indexing
 - 🛠️ 5 different syntaxes to declare and initialize arrays in Java
 - 🔍 Declaration vs Initialization — गहराई में (Memory level understanding)
-- 📝 3 Declaration Styles (`int[] arr` vs `int arr[]` vs multiple variables)
-- 🎯 Interview Trap: `int[] a, b` vs `int a[], b` — कौन Array है कौन नहीं?
-- ⚡ `new` Keyword — Heap में Object कैसे बनता है
-- 🧩 Direct Value Assignment with Curly Braces `{}`
-- ⏳ Traversal and access of Array items
+- 📝 3 Declaration Styles & Interview Traps (`int[] a, b` vs `int a[], b`)
+- ⚡ 1D Array Traversal & Enhanced For-Loop (`for-each`) with limitations
+- 🔲 2D Arrays & Matrix Representation (Row-major memory mapping)
+- 🧩 Jagged / Ragged Arrays (Uneven rows allocation & real-world use cases)
+- 🧠 3D & Multidimensional Arrays (Multi-level pointer addressing in Heap)
+- 👥 Array of Class Objects (References vs Heap Objects & `NullPointerException` trap)
+- ⚠️ 4 Major Drawbacks of Arrays & Need for Java Collections Framework
+
+### 🧵 Phase 15: Strings Deep Dive (Immutability, SCP & Methods) [👉 View Folder](./15-strings)
+Mastering text processing, String Constant Pool, and interview algorithms with **Chapter-wise code files!**
+- 📦 `java.lang.String` Class Architecture & Object Creation in Heap
+- 🔒 Why Strings are Immutable in Java? (Security, Thread Safety, HashCode Caching)
+- 🏊 String Constant Pool (SCP) vs Normal Heap Area & `.intern()` Method
+- ⚖️ String Comparison: `==` (Address) vs `.equals()` (Content) vs `.equalsIgnoreCase()` vs `.compareTo()`
+- ➕ String Concatenation: `+` Operator Compiler Optimization vs `.concat()` Memory Mechanics
+- 🛠️ 20+ Essential Inbuilt String Methods Cheat-Sheet (`length`, `charAt`, `substring`, `trim`, `split`, etc.)
+- 🗺️ String Interview Problems Roadmap: Palindrome, Reversal, Frequency, and Next Steps (`StringBuilder`/`StringBuffer`)
 
 ---
 
